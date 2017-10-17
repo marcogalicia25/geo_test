@@ -1,0 +1,9 @@
+.gradle
+gradle.properties
+.idea
+/local.properties
+.DS_Store
+build
+*.iml
+*.pptx#
+!app/src/main/assets/pdfjs/build

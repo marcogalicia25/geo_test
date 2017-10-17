@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#34b7bd</color>
+    <color name="colorAccent">#1C959A</color>
+
+    <color name="inbox_section_separator">#DADADA</color>
+    <color name="inbox_section_header">#1C959A</color>
+    <color name="dark_aqua">#0d959b</color>
+    <color name="mid_aqua">#34b7bd</color>
+</resources>
