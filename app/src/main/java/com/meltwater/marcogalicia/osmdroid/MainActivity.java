@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.mswim.architecture.BaseActivity;
-import com.mswim.architecture.mvp.MvpPresenter;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
@@ -117,7 +116,7 @@ public class MainActivity extends BaseActivity<DocumentsView, DocumentsPresenter
                     startMarker.setOnMarkerClickListener(new Marker.OnMarkerClickListener() {
                         @Override
                         public boolean onMarkerClick(Marker marker, MapView mapView) {
-                            Toast.makeText(MainActivity.this, "Title: " + document.getSentiment(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Sentiment: " + document.getSentiment(), Toast.LENGTH_SHORT).show();
                             return false;
                         }
                     });
