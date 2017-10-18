@@ -17,6 +17,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        dev {
+            buildConfigField 'String', 'HOST', '"http://demo6120268.mockable.io/"'
+            buildConfigField 'String', 'flavor', '"dev"'
+        }
+        prod {
+            buildConfigField 'String', 'HOST', '"http://demo6120268.mockable.io/"'
+            buildConfigField 'String', 'flavor', '"prod"'
+        }
+    }
 }
 
 dependencies {
@@ -30,8 +40,9 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile project(':architecture')
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     testCompile 'junit:junit:4.12'
 
 
